@@ -1,3 +1,5 @@
+//go to 语句的使用
+
 #include<iostream>
 using namespace std;
 int main()

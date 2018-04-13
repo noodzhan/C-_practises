@@ -1,13 +1,9 @@
+//采用分治算法求序列的子序列的和最大值
 #include <iostream>
-
 #define MAXN 1000000
-
 using namespace std;
-
 int s[MAXN];
-
 int Max3( int A, int B, int C )
-
 { /* 返回3个整数中的最大值 */
 
     return A > B ? A > C ? A : C : B > C ? B : C;
@@ -22,14 +18,9 @@ int DivideAndConquer( int List[], int left, int right )
 
     int MaxLeftBorderSum, MaxRightBorderSum; /*存放跨分界线的结果*/
 
-
-
     int LeftBorderSum, RightBorderSum;
 
     int center, i;
-
-
-
     if( left == right )  { /* 递归的终止条件，子列只有1个数字 */
 
         if( List[left] > 0 )  return List[left];
@@ -115,10 +106,6 @@ int main()
         for(i=0;i<n;i++)
 
             cin>>s[i];
-
-
-
-
 
     }
 
